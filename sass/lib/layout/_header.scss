@@ -1,0 +1,34 @@
+header{
+	position:relative;
+	padding:120px 0 20px;
+	.row{
+		img{
+			width:200px;
+			padding-bottom:20px;
+			border-bottom:2px solid #ccc;
+		}
+		.text{
+			text-align:center;
+			font-family:$font-8;
+			text-transform:capitalize;
+			font-weight:bold;
+			padding:10px 0;
+			color:#333;
+			span{
+				color:#A31D49;
+			}
+		}
+		a{
+			background:#A31D49;
+			color:white;
+			padding:20px;
+			transition:all 150ms linear;
+			&:hover{
+				background:white;
+				outline:2px solid #A31D49;
+				color:#A31D49;
+			}
+		}
+		@include flex(column,center,center);
+	}
+}

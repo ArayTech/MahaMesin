@@ -1,0 +1,85 @@
+section{
+	font-family:$font-4;
+	@include flex(column,center,center);
+	padding:25px 0;
+	.judul{
+		position:relative;
+		padding-bottom:15px;
+		&:after,&:before{
+			position:absolute;
+			content:"";
+			bottom:0;
+			width:3%;
+			background:#A31D49;
+			height:3px;
+			margin-top:10px;
+		}
+		&:before{
+			left:50%;
+		}
+		&:after{
+			right:50%;
+		}
+	}
+}
+section.bg-color{
+	background:#A31D49;
+	color:white;
+	text-align:center;
+	padding:25px 50px;
+	p{
+		font-size:1.1em;
+		font-style:italic;
+	}
+}
+
+section#kontak{
+	display:block;
+	.judul{
+		text-align:center;
+	}
+	.bbm,.telp{
+		text-align:center;
+		margin-top:25px;
+	}
+	.bbm{
+		
+	}
+	.telp{
+		
+	}
+}
+
+section#inti{
+	padding:50px 0;
+	.relative{
+		position:relative;
+		.background{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:450px;
+			background:url("../img/img1.jpg") no-repeat;
+			float:left;
+			display:block;
+			@include RT(992px){ display:none; }
+		}
+		img{
+			display:none;
+			@include RT(992px){ display:block; }
+		}
+	}
+	p{
+		font-family:calibri;
+		padding:0 20px;
+		font-size:1.2em;
+		height:410px;
+		overflow-y:scroll;
+		float:right;
+		@include RT(992px){ overflow-y:auto; padding:20px; }
+	}
+}
+.clear{
+	clear:both;
+}

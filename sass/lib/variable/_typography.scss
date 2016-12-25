@@ -1,0 +1,15 @@
+$font-1 : acme;
+$font-2 : comfortaa;
+$font-3 : fredoka one;
+$font-4 : hammersmith one;
+$font-5 : oswald;
+$font-6 : Righteous;
+$font-7 : roboto;
+$font-8 : ubuntu;
+
+a{
+	&:hover,&:focus{
+		cursor:pointer;
+		text-decoration:none;
+	}
+}

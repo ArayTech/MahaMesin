@@ -1,0 +1,183 @@
+a:hover, a:focus {
+  cursor: pointer;
+  text-decoration: none; }
+
+#nav {
+  background: #fbfbfb;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 35px;
+  transition: all 200ms ease;
+  z-index: 999; }
+  #nav .outer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    #nav .outer img {
+      width: 200px; }
+    #nav .outer ul {
+      transform: translateY(3px); }
+      #nav .outer ul li {
+        float: left;
+        display: block; }
+        #nav .outer ul li a {
+          display: block;
+          padding: 7px 15px;
+          color: #333;
+          font-size: 17px;
+          font-family: hammersmith one; }
+          #nav .outer ul li a:focus, #nav .outer ul li a:hover, #nav .outer ul li a:active {
+            color: #A31D49;
+            text-decoration: none; }
+          #nav .outer ul li a.focus {
+            color: #A31D49;
+            text-decoration: none;
+            position: relative; }
+            #nav .outer ul li a.focus:before, #nav .outer ul li a.focus:after {
+              position: absolute;
+              content: "";
+              bottom: 0;
+              height: 2px;
+              width: 10%;
+              background: #A31D49; }
+            #nav .outer ul li a.focus:before {
+              left: 50%; }
+            #nav .outer ul li a.focus:after {
+              right: 50%; }
+
+header {
+  position: relative;
+  padding: 120px 0 20px; }
+  header .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    header .row img {
+      width: 200px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #ccc; }
+    header .row .text {
+      text-align: center;
+      font-family: ubuntu;
+      text-transform: capitalize;
+      font-weight: bold;
+      padding: 10px 0;
+      color: #333; }
+      header .row .text span {
+        color: #A31D49; }
+    header .row a {
+      background: #A31D49;
+      color: white;
+      padding: 20px;
+      transition: all 150ms linear; }
+      header .row a:hover {
+        background: white;
+        outline: 2px solid #A31D49;
+        color: #A31D49; }
+
+footer {
+  background: #b92153;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  footer .sosmed a i {
+    color: #eee;
+    padding: 5px 10px;
+    margin: 10px 5px 5px;
+    outline: 2px solid white;
+    text-align: center; }
+  footer p {
+    padding: 15px 0 0;
+    color: #eee;
+    font-family: ubuntu; }
+
+section {
+  font-family: hammersmith one;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0; }
+  section .judul {
+    position: relative;
+    padding-bottom: 15px; }
+    section .judul:after, section .judul:before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 3%;
+      background: #A31D49;
+      height: 3px;
+      margin-top: 10px; }
+    section .judul:before {
+      left: 50%; }
+    section .judul:after {
+      right: 50%; }
+
+section.bg-color {
+  background: #A31D49;
+  color: white;
+  text-align: center;
+  padding: 25px 50px; }
+  section.bg-color p {
+    font-size: 1.1em;
+    font-style: italic; }
+
+section#kontak {
+  display: block; }
+  section#kontak .judul {
+    text-align: center; }
+  section#kontak .bbm, section#kontak .telp {
+    text-align: center;
+    margin-top: 25px; }
+
+section#inti {
+  padding: 50px 0; }
+  section#inti .relative {
+    position: relative; }
+    section#inti .relative .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 450px;
+      background: url("../img/img1.jpg") no-repeat;
+      float: left;
+      display: block; }
+      @media screen and (max-width: 992px) {
+        section#inti .relative .background {
+          display: none; } }
+    section#inti .relative img {
+      display: none; }
+      @media screen and (max-width: 992px) {
+        section#inti .relative img {
+          display: block; } }
+  section#inti p {
+    font-family: calibri;
+    padding: 0 20px;
+    font-size: 1.2em;
+    height: 410px;
+    overflow-y: scroll;
+    float: right; }
+    @media screen and (max-width: 992px) {
+      section#inti p {
+        overflow-y: auto;
+        padding: 20px; } }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
